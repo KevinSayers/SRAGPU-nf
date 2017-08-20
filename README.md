@@ -1,0 +1,1 @@
+A Nextflow pipeline which performs scRNA-seq variant calling. Two GPU enabled short read aligners are used for alignment, BarraCUDA and nvBowtie. 
