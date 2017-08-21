@@ -1,5 +1,5 @@
-transcriptFile = file('chr17.fa')
-refindex = file('chr17.fa.fai')
+transcriptFile = file('Homo_sapiens.GRCh38.cdna.all.fa')
+refindex = file('Homo_sapiens.GRCh38.cdna.all.fa.fai')
 
 sampleList = Channel.fromPath('newSamples.txt').splitText()
 //THIS WORKFLOW HAS SOFTCLIPS OFF FOR BARRACUDA

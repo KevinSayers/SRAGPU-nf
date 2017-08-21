@@ -25,8 +25,8 @@ if(params.autosetup == 'true')
 		container = "docker://sayerskt/samtools"
 
 		output:
-		file "Homo_sapiens.GRCh38.dna.chromosome.17.fa" into reference
-		file "Homo_sapiens.GRCh38.dna.chromosome.17.fa.fai" into refindex
+		file "Homo_sapiens.GRCh38.cdna.all.fa" into reference
+		file "Homo_sapiens.GRCh38.cdna.all.fa.fai" into refindex
 
 		"""
 		wget ftp://ftp.ensembl.org/pub/release-88/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz
