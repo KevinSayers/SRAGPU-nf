@@ -22,8 +22,6 @@ process getSample{
     maxRetries 3
 	maxForks 4
 	container = "docker://sayerskt/sratoolkit"
-	input:
-	val sampleID from sampleList
 
 	output:
 	file "SRR5023465_1.fastq" into readone, reads1

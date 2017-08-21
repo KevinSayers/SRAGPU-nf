@@ -1,0 +1,3 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	69/7e4e8e	-	nvBWTIndex	COMPLETED	0	2017-08-21 22:17:10.372	1m 36s	1m 35s	91.2%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	0e/35d753	-	nvBowtieAlign	COMPLETED	0	2017-08-21 22:18:46.044	3m 11s	3m 10s	184.0%	4.9 GB	93.4 GB	2.9 GB	2.5 GB

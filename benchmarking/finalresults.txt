@@ -1,0 +1,38 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	d7/7fedf4	-	barracudaIndex	COMPLETED	0	2017-08-21 18:38:05.724	5m 1s	5m 1s	100.0%	423.4 MB	456.3 MB	1.2 GB	719.3 MB
+2	6d/115f31	-	barracudaAln	COMPLETED	0	2017-08-21 18:43:06.909	2m 41s	2m 41s	98.4%	1.3 GB	85.7 GB	3.1 GB	210.2 MB
+3	34/723198	-	barracudaSampe	COMPLETED	0	2017-08-21 18:45:48.367	2m 42s	2m 42s	343.0%	1.2 GB	1.5 GB	3.4 GB	2.7 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	5a/35ff8e	-	nvBWTIndex	COMPLETED	0	2017-08-21 18:53:21.056	1m 27s	1m 27s	100.0%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	b4/3d40ee	-	nvBowtieAlign	COMPLETED	0	2017-08-21 18:54:48.523	3m 9s	3m 9s	187.0%	4.9 GB	93.4 GB	2.9 GB	2.5 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	66/3c4977	-	barracudaIndex	COMPLETED	0	2017-08-21 19:00:42.923	5m 4s	5m 3s	100.0%	423.5 MB	456.3 MB	1.2 GB	719.3 MB
+2	0c/3aa250	-	barracudaAln	COMPLETED	0	2017-08-21 19:05:46.531	2m 42s	2m 42s	97.2%	1.3 GB	85.7 GB	3.1 GB	210.2 MB
+3	39/733e6f	-	barracudaSampe	COMPLETED	0	2017-08-21 19:08:28.808	2m 41s	2m 41s	310.0%	1.2 GB	1.5 GB	3.4 GB	2.7 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	d2/038425	-	nvBWTIndex	COMPLETED	0	2017-08-21 19:16:23.591	1m 27s	1m 27s	99.6%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	36/1b9eb9	-	nvBowtieAlign	COMPLETED	0	2017-08-21 19:17:50.633	3m 10s	3m 10s	184.0%	4.9 GB	93.4 GB	2.9 GB	2.4 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	6c/a5945a	-	barracudaIndex	COMPLETED	0	2017-08-21 19:23:12.148	5m	5m	107.0%	423.5 MB	456.3 MB	1.2 GB	719.3 MB
+2	d1/323e8d	-	barracudaAln	COMPLETED	0	2017-08-21 19:28:12.395	2m 42s	2m 42s	97.4%	1.3 GB	85.7 GB	3.1 GB	210.2 MB
+3	66/7abb88	-	barracudaSampe	COMPLETED	0	2017-08-21 19:30:54.270	2m 42s	2m 41s	342.0%	1.2 GB	1.5 GB	3.4 GB	2.7 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	19/9a9cda	-	nvBWTIndex	COMPLETED	0	2017-08-21 19:51:17.909	1m 27s	1m 27s	99.5%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	da/707e2a	-	nvBowtieAlign	COMPLETED	0	2017-08-21 19:52:45.258	3m 9s	3m 9s	189.0%	4.9 GB	93.4 GB	2.9 GB	2.5 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	83/0e4fca	-	barracudaIndex	COMPLETED	0	2017-08-21 20:02:32.006	5m 3s	5m 3s	100.0%	423.5 MB	456.3 MB	1.2 GB	719.3 MB
+2	aa/87450a	-	barracudaAln	COMPLETED	0	2017-08-21 20:07:35.132	2m 42s	2m 41s	98.5%	1.3 GB	85.7 GB	3.1 GB	210.2 MB
+3	21/f44bea	-	barracudaSampe	COMPLETED	0	2017-08-21 20:10:16.657	2m 41s	2m 41s	313.0%	1.2 GB	1.5 GB	3.4 GB	2.7 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	98/177186	-	nvBWTIndex	COMPLETED	0	2017-08-21 20:16:23.693	1m 28s	1m 28s	99.4%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	7c/0bd9b1	-	nvBowtieAlign	COMPLETED	0	2017-08-21 20:17:51.487	3m 11s	3m 11s	187.0%	4.9 GB	93.4 GB	2.9 GB	2.4 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	d1/b545a9	-	barracudaIndex	COMPLETED	0	2017-08-21 20:26:19.442	5m 2s	5m 2s	106.0%	423.5 MB	456.3 MB	1.2 GB	719.3 MB
+2	36/0ebd58	-	barracudaAln	COMPLETED	0	2017-08-21 20:31:21.889	2m 42s	2m 42s	97.6%	1.3 GB	85.7 GB	3.1 GB	210.2 MB
+3	fc/4b686d	-	barracudaSampe	COMPLETED	0	2017-08-21 20:34:03.853	2m 50s	2m 50s	313.0%	1.2 GB	1.5 GB	3.4 GB	2.8 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	4e/58d57f	-	nvBWTIndex	COMPLETED	0	2017-08-21 20:38:34.410	1m 27s	1m 27s	99.9%	1.9 GB	82.2 GB	653.3 MB	215.7 MB
+2	3d/089573	-	nvBowtieAlign	COMPLETED	0	2017-08-21 20:40:01.625	3m 11s	3m 11s	187.0%	4.9 GB	93.4 GB	2.9 GB	2.4 GB
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	cf/07a6f3	-	nvBWTIndex	COMPLETED	0	2017-08-21 21:39:06.067	12m 44s	12m 43s	386.0%	1.4 GB	2.1 GB	3.5 GB	2.6 GB
+2	1b/d09867	-	nvBowtieAlign	COMPLETED	0	2017-08-21 21:51:49.681	16m 18s	16m 18s	395.0%	771.5 MB	983.3 MB	3.1 GB	2.8 GB

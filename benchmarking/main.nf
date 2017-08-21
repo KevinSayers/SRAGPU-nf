@@ -1,11 +1,11 @@
 transcriptFile = file('Homo_sapiens.GRCh38.cdna.all.fa')
 refindex = file('Homo_sapiens.GRCh38.cdna.all.fa.fai')
 
-
+readone = file('SRR5023465_1.fastq')
+readtwo = file('SRR5023465_2.fastq')
 process barracudaIndex{
-	container = 'shub://KevinSayers/BarraCUDA_Singularity'
-	
-	storeDir 'index/'
+	//jhcontainer = 'shub://KevinSayers/BarraCUDA_Singularity'
+
 	input:
 	file ref from transcriptFile
 
@@ -20,7 +20,7 @@ process barracudaIndex{
 }
 
 process barracudaAln{
-	container = 'shub://KevinSayers/BarraCUDA_Singularity'
+	//kljcontainer = 'shub://KevinSayers/BarraCUDA_Singularity'
 	maxForks 1
 
 	echo true
@@ -42,20 +42,22 @@ process barracudaAln{
 }
 
 process barracudaSampe{
-	container = 'shub://KevinSayers/BarraCUDA_Singularity'
+	//lkkjcontainer = 'shub://KevinSayers/BarraCUDA_Singularity'
+	publishDir 's3://msthesis/testing/', mode: 'copy' 
+
 	maxForks 1
 
 	input:
 	file indexs from indexFiles
-	file first from reads1
-	file second from reads2
+	file first from readone
+	file second from readtwo
 	file firstsai from saione
 	file secondsai from saitwo
 	
 	output:
-	file "${first.baseName}.sam" into mapOut
+	file "barracuda.sam" into mapOut
 	"""
-	barracuda sampe ${transcriptFile.baseName} ${firstsai} ${secondsai} ${first} ${second} > ${first.baseName}.sam
+	barracuda sampe ${transcriptFile.baseName} ${firstsai} ${secondsai} ${first} ${second} > barracuda.sam
 	"""
 }
 
