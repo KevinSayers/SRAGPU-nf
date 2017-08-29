@@ -14,3 +14,19 @@ process setup{
 	"""
 
 }
+process barracudaIndex{
+	container = 'shub://KevinSayers/BarraCUDA_Singularity'
+	
+	storeDir 'index/'
+	input:
+	file ref from transcriptFile
+
+	output:
+	file "${reference.baseName}.*" into indexOut, indexFiles
+
+	"""
+	barracuda index -p ${reference.baseName} ${ref}
+
+	"""
+	
+}
