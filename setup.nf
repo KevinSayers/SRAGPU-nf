@@ -1,7 +1,6 @@
 process setup{
 	container = "docker://sayerskt/samtools"
 	publishDir './', mode: 'copy', overwrite: true
-	container = "docker://sayerskt/samtools"
 
 	output:
 	file "Homo_sapiens.GRCh38.cdna.all.fa" into reference
