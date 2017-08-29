@@ -18,7 +18,7 @@ process barracudaIndex{
 	
 	storeDir 'index/'
 	input:
-	file ref from transcriptFile
+	file ref from reference
 
 	output:
 	file "${reference.baseName}.*" into indexOut, indexFiles
