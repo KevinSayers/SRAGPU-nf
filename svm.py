@@ -1,7 +1,8 @@
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import random
+import pickle
 # Create graph
 sess = tf.Session()
 
@@ -102,7 +103,7 @@ for j in range(0,5):
     test_accuracy = []
     losspts = []
 
-    for i in range(20):
+    for i in range(2000):
         sess.run(train_step, feed_dict={x: trainingdata, y_: traininglabels})
 
         temp_loss = sess.run(loss, feed_dict={x: trainingdata, y_: traininglabels})
@@ -122,28 +123,27 @@ for j in range(0,5):
     allloss.append(loss_vec)
     alltst.append(test_accuracy)
 
+# plt.title('Training accuracy')
+# plt.ylabel('Accuracy')
+# plt.xlabel('iteration')
+# for i in alltrain:
+#     plt.plot(i)
+# plt.savefig('finalsvmtrain.png')
+# plt.clf()
 
-plt.title('Training accuracy')
-plt.ylabel('Accuracy')
-plt.xlabel('iteration')
-for i in alltrain:
-    plt.plot(i)
-plt.savefig('t1.png')
-plt.clf()
-
-plt.title('Training loss')
-plt.ylabel('loss')
-plt.xlabel('iteration')
-for i in allloss:
-    plt.plot(i)
-plt.savefig('t2.png')
-plt.clf()
+# plt.title('Training loss')
+# plt.ylabel('loss')
+# plt.xlabel('iteration')
+# for i in allloss:
+#     plt.plot(i)
+# plt.savefig('finalsvmloss.png')
+# plt.clf()
 
 
-plt.title('Testing accuracy')
-plt.ylabel('Accuracy')
-plt.xlabel('iteration')
-for i in alltst:
-    plt.plot(i)
-plt.savefig('t3.png')
-plt.clf()
+# plt.title('Testing accuracy')
+# plt.ylabel('Accuracy')
+# plt.xlabel('iteration')
+# for i in alltst:
+#     plt.plot(i)
+# plt.savefig('finalsvmtest.png')
+# plt.clf()

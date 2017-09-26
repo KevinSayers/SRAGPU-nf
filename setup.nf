@@ -21,10 +21,10 @@ process barracudaIndex{
 	file ref from reference
 
 	output:
-	file "${reference.baseName}.*" into indexOut, indexFiles
+	file "${reference.baseName.value}.*" into indexOut, indexFiles
 
 	"""
-	barracuda index -p ${reference.baseName} ${ref}
+	barracuda index -p ${reference.baseName.value} ${ref}
 
 	"""
 	
