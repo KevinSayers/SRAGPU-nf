@@ -1,4 +1,0 @@
-2017-09-27 20:19:51	10m 8s	peaceful_pasteur	ERR	89ab6120a037eae68012c250506941af	bc8266ad-508d-4304-82b8-2acb5eabfac2	nextflow run classify.nf
-2017-09-27 20:41:43	1m 41s	jovial_solvay	ERR	1b1fc1a86c0f1bb28eaede0b209b9747	e91583fd-9ed9-48a1-9da0-5392570a6f9a	nextflow run classify.nf
-2017-09-27 20:44:48	3m 30s	dreamy_bohr	ERR	927c09adde2c17b6bb8ec71a9c920bb5	e68074ca-f974-49db-8f55-570d376f2ef7	nextflow run classify.nf
-2017-09-27 20:49:23	2m 17s	romantic_meucci	OK	dbb0011f60f4a43e39d4b20880c4a58b	73277660-e375-426e-b589-06a7ab1312bf	nextflow run classify.nf
