@@ -8,7 +8,7 @@ process runTF{
 	file data from params.featureFile
 
 	output:
-	file "*.p" into pickles
+	stdout result
 
 	"""
 	python3 ${classifier}
