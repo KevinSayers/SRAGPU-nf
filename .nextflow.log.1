@@ -1,0 +1,172 @@
+Sep-27 21:04:02.837 [main] DEBUG nextflow.cli.Launcher - $> /usr/local/bin/nextflow run classify.nf
+Sep-27 21:04:02.941 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 0.25.7
+Sep-27 21:04:02.952 [main] INFO  nextflow.cli.CmdRun - Launching `classify.nf` [cocky_spence] - revision: dbb0011f60
+Sep-27 21:04:02.964 [main] DEBUG nextflow.config.ConfigBuilder - Found config home: /home/kevin/.nextflow/config
+Sep-27 21:04:02.965 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: nextflow.config
+Sep-27 21:04:02.967 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/kevin/.nextflow/config
+Sep-27 21:04:02.968 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/kevin/SRAGPU-nf/nextflow.config
+Sep-27 21:04:03.290 [main] DEBUG nextflow.config.ConfigBuilder - Setting config profile: 'standard'
+Sep-27 21:04:03.401 [main] DEBUG nextflow.Session - Session uuid: 3302c465-ad72-4d98-8553-11d4b4219c12
+Sep-27 21:04:03.401 [main] DEBUG nextflow.Session - Run name: cocky_spence
+Sep-27 21:04:03.404 [main] DEBUG nextflow.Session - Executor pool size: 4
+Sep-27 21:04:03.420 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 0.25.7 build 4531
+  Modified: 06-09-2017 17:25 UTC 
+  System: Linux 4.4.0-1020-aws
+  Runtime: Groovy 2.4.11 on OpenJDK 64-Bit Server VM 1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 19322@ip-172-31-14-201 [172.31.14.201]
+  CPUs: 4 - Mem: 60 GB (55 GB) - Swap: 0 (0)
+Sep-27 21:04:03.451 [main] DEBUG nextflow.Session - Work-dir: /home/kevin/SRAGPU-nf/work [ext2/ext3]
+Sep-27 21:04:03.451 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/kevin/SRAGPU-nf/bin
+Sep-27 21:04:03.560 [main] DEBUG nextflow.Session - Session start invoked
+Sep-27 21:04:03.563 [main] DEBUG nextflow.processor.TaskDispatcher - Dispatcher > start
+Sep-27 21:04:03.564 [main] DEBUG nextflow.script.ScriptRunner - > Script parsing
+Sep-27 21:04:03.692 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-27 21:04:03.743 [main] DEBUG nextflow.processor.ProcessFactory - Discovered executor class: nextflow.executor.IgExecutor
+Sep-27 21:04:03.808 [main] DEBUG nextflow.processor.ProcessFactory - << taskConfig executor: null
+Sep-27 21:04:03.808 [main] DEBUG nextflow.processor.ProcessFactory - >> processorType: 'ignite'
+Sep-27 21:04:03.808 [main] DEBUG nextflow.processor.ProcessFactory - Loading executor class: nextflow.executor.IgExecutor
+Sep-27 21:04:03.817 [main] DEBUG nextflow.executor.Executor - Initializing executor: ignite
+Sep-27 21:04:03.820 [main] INFO  nextflow.executor.Executor - [warm up] executor > ignite
+Sep-27 21:04:03.826 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'ignite' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Sep-27 21:04:03.829 [main] DEBUG nextflow.processor.TaskDispatcher - Starting monitor: TaskPollingMonitor
+Sep-27 21:04:03.829 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: ignite)
+Sep-27 21:04:03.832 [main] DEBUG nextflow.executor.Executor - Invoke register for executor: ignite
+Sep-27 21:04:03.839 [main] DEBUG nextflow.executor.IgConnector - Create Ignite master node
+Sep-27 21:04:03.869 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: IgFileSystemProvider
+Sep-27 21:04:03.874 [main] DEBUG nextflow.daemon.IgGridFactory - Configuration properties for role: 'master' -- [:]
+Sep-27 21:04:04.079 [main] DEBUG nextflow.daemon.IgGridFactory - Apache Ignite config > cloud provider: cloud:aws:test
+Sep-27 21:04:04.083 [main] DEBUG nextflow.cloud.CloudDriverFactory - Discovered cloud driver: `aws` [nextflow.cloud.aws.AmazonCloudDriver]
+Sep-27 21:04:04.228 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.077 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.247 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.413 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.578 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.736 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:05.910 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.072 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.241 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.404 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.578 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.747 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:06.898 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.045 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.192 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.336 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.505 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.672 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.827 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:07.975 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.132 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.274 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.426 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.575 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.722 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:08.872 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:09.027 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:09.176 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:09.244 [main] DEBUG nextflow.daemon.IgGridFactory - Apache Ignite config > joining IPs: 172.31.14.201
+Sep-27 21:04:09.264 [main] DEBUG nextflow.daemon.IgGridFactory - Apache Ignite config > group name: nextflow
+Sep-27 21:04:09.313 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Config URL: n/a
+Sep-27 21:04:09.313 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Daemon mode: off
+Sep-27 21:04:09.313 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - OS: Linux 4.4.0-1020-aws amd64
+Sep-27 21:04:09.313 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - OS user: kevin
+Sep-27 21:04:09.313 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Language runtime: Groovy
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - VM information: OpenJDK Runtime Environment 1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11 Oracle Corporation OpenJDK 64-Bit Server VM 25.131-b11
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - VM total memory: 13.0GB
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Remote Management [restart: off, REST: on, JMX (remote: off)]
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - IGNITE_HOME=null
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - VM arguments: [-Xverify:none, -Djava.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, -Dfile.encoding=UTF-8, -Dcapsule.app=nextflow_0.25.7, -Djava.awt.headless=true, -Dcapsule.jar=/home/kevin/.nextflow/framework/0.25.7/nextflow-0.25.7-one.jar]
+Sep-27 21:04:09.314 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Configured caches ['ignite-marshaller-sys-cache', 'ignite-sys-cache', 'ignite-atomics-sys-cache', 'allSessions', 'igfs-data', 'igfs-meta', 'nextflow.cache.pendingtasks']
+Sep-27 21:04:09.318 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Local node user attribute [ROLE=master]
+Sep-27 21:04:09.468 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Non-loopback local IPs: 172.17.0.1, 172.31.14.201, fe80:0:0:0:f2:6cff:fedd:5672%ens3
+Sep-27 21:04:09.468 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Enabled local MACs: 0242900314DC, 02F26CDD5672
+Sep-27 21:04:09.476 [main] INFO  o.a.i.i.p.p.IgnitePluginProcessor - Configured plugins:
+Sep-27 21:04:09.476 [main] INFO  o.a.i.i.p.p.IgnitePluginProcessor -   ^-- None
+Sep-27 21:04:09.476 [main] INFO  o.a.i.i.p.p.IgnitePluginProcessor - 
+Sep-27 21:04:09.510 [main] INFO  o.a.i.s.c.tcp.TcpCommunicationSpi - IPC shared memory server endpoint started [port=48100, tokDir=/tmp/ignite/ipc/shmem/87693661-8f22-4912-bcba-d13dc00658fe-19322]
+Sep-27 21:04:09.510 [main] INFO  o.a.i.s.c.tcp.TcpCommunicationSpi - Successfully bound shared memory communication to TCP port [port=48100, locHost=0.0.0.0/0.0.0.0]
+Sep-27 21:04:09.520 [main] INFO  o.a.i.s.c.tcp.TcpCommunicationSpi - Successfully bound to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0]
+Sep-27 21:04:09.534 [main] WARN  o.a.i.s.c.noop.NoopCheckpointSpi - Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+Sep-27 21:04:09.554 [main] WARN  o.a.i.i.m.c.GridCollisionManager - Collision resolution is disabled (all jobs will be activated upon arrival).
+Sep-27 21:04:09.556 [main] WARN  o.a.i.s.s.noop.NoopSwapSpaceSpi - Swap space is disabled. To enable use FileSwapSpaceSpi.
+Sep-27 21:04:09.557 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - Security status [authentication=off, tls/ssl=off]
+Sep-27 21:04:09.671 [main] INFO  o.a.i.i.p.r.p.t.GridTcpRestProtocol - Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11211]
+Sep-27 21:04:09.705 [main] INFO  o.a.i.i.u.i.s.IpcSharedMemoryServerEndpoint - IPC shared memory server endpoint started [port=10500, tokDir=/tmp/ignite/ipc/shmem/87693661-8f22-4912-bcba-d13dc00658fe-19322]
+Sep-27 21:04:09.706 [main] INFO  o.a.i.i.u.i.l.IpcServerTcpEndpoint - IPC server loopback endpoint started [port=11400]
+Sep-27 21:04:09.731 [main] INFO  o.a.i.s.d.tcp.TcpDiscoverySpi - Successfully bound to TCP port [port=47500, localHost=0.0.0.0/0.0.0.0]
+Sep-27 21:04:09.837 [main] WARN  o.a.i.i.p.c.GridCacheEvictionManager - <igfs-data> Evictions are not synchronized with other nodes in topology which provides 2x-3x better performance but may cause data inconsistency if cache store is not configured (consider changing 'evictSynchronized' configuration property).
+Sep-27 21:04:09.856 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=igfs-data, mode=PARTITIONED]
+Sep-27 21:04:09.859 [main] WARN  o.a.i.i.p.cache.GridCacheProcessor - Eviction policy not enabled with ONHEAP_TIERED mode for cache (entries will not be moved to off-heap store): allSessions
+Sep-27 21:04:09.903 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=allSessions, mode=PARTITIONED]
+Sep-27 21:04:09.905 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=ignite-sys-cache, mode=REPLICATED]
+Sep-27 21:04:09.906 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=ignite-atomics-sys-cache, mode=PARTITIONED]
+Sep-27 21:04:09.909 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=igfs-meta, mode=REPLICATED]
+Sep-27 21:04:09.910 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=ignite-marshaller-sys-cache, mode=REPLICATED]
+Sep-27 21:04:09.912 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Started cache [name=nextflow.cache.pendingtasks, mode=REPLICATED]
+Sep-27 21:04:10.016 [exchange-worker-#53%nextflow%] INFO  o.a.i.i.p.c.GridCachePartitionExchangeManager - Skipping rebalancing (nothing scheduled) [top=AffinityTopologyVersion [topVer=1, minorTopVer=0], evt=NODE_JOINED, node=87693661-8f22-4912-bcba-d13dc00658fe]
+Sep-27 21:04:10.046 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+Sep-27 21:04:10.046 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - 
+Sep-27 21:04:10.047 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 1.6.0#20160518-sha1:0b22c45bb9b97692208fd0705ddf8045ff34a031
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.4.0-1020-aws amd64
+>>> CPU(s): 4
+>>> Heap: 13.0GB
+>>> VM name: 19322@ip-172-31-14-201
+>>> Grid name: nextflow
+>>> Local node [ID=87693661-8F22-4912-BCBA-D13DC00658FE, order=1, clientMode=false]
+>>> Local node addresses: [ip-172-17-0-1.eu-west-1.compute.internal/0:0:0:0:0:0:0:1%lo, ip-172-31-14-201.eu-west-1.compute.internal/127.0.0.1, /172.17.0.1, /172.31.14.201]
+>>> Local ports: TCP:10500 TCP:11211 TCP:11400 TCP:47100 TCP:47500 TCP:48100 
+
+Sep-27 21:04:10.048 [main] INFO  o.a.i.i.m.d.GridDiscoveryManager - Topology snapshot [ver=1, servers=1, clients=0, CPUs=4, heap=13.0GB]
+Sep-27 21:04:10.057 [main] DEBUG nextflow.util.RemoteSession - Packed library (3 files) at path: /tmp/nxf-8887466416263222366
+Sep-27 21:04:10.107 [main] DEBUG nextflow.executor.IgConnector - Cluster shutdownOnComplete: false
+Sep-27 21:04:10.143 [pub-#7%nextflow%] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:10.169 [main] DEBUG nextflow.scheduler.Scheduler - +++ Initial cluster topology:
+- nodeId=87693661-8f22-4912-bcba-d13dc00658fe; hostname=ip-172-31-14-201; instance-id: i-03b24ae679a3fc674; boot-time=27-Sep-2017 20:13; tot-res:[cpus=4; mem=60 GB; disk=86.9 GB]; idle=-
+
+Sep-27 21:04:10.183 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:10.194 [main] DEBUG nextflow.Global - Using AWS credentials defined by environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+Sep-27 21:04:10.212 [scheduler-thread] DEBUG nextflow.scheduler.Scheduler - +++ Node joined the cluster: [ip-172-31-14-201] 87693661-8f22-4912-bcba-d13dc00658fe
+Sep-27 21:04:10.221 [scheduler-agent] DEBUG nextflow.scheduler.SchedulerAgent - === Scheduler agent resources: cpus=4; mem=60 GB; disk=86.9 GB
+Sep-27 21:04:10.257 [main] DEBUG nextflow.scheduler.Autoscaler - ### Auto-scaling enabled: false
+Sep-27 21:04:10.330 [main] DEBUG nextflow.Session - >>> barrier register (process: runTF)
+Sep-27 21:04:10.343 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > runTF -- maxForks: 4
+Sep-27 21:04:10.387 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Sep-27 21:04:10.387 [main] DEBUG nextflow.Session - Session await
+Sep-27 21:04:10.503 [Actor Thread 1] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/kevin/SRAGPU-nf/work/singularity
+Sep-27 21:04:10.503 [Actor Thread 1] INFO  nextflow.container.SingularityCache - Pulling Singularity image docker://tensorflow/tensorflow:nightly-gpu-py3 [cache /home/kevin/SRAGPU-nf/work/singularity/tensorflow-tensorflow-nightly-gpu-py3.img]
+Sep-27 21:05:17.871 [Actor Thread 1] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=docker://tensorflow/tensorflow:nightly-gpu-py3 path=/home/kevin/SRAGPU-nf/work/singularity/tensorflow-tensorflow-nightly-gpu-py3.img
+Sep-27 21:05:17.947 [Task submitter] INFO  nextflow.Session - [08/2f5ec5] Submitted process > runTF
+Sep-27 21:05:18.016 [pool-5-thread-1] DEBUG nextflow.executor.IgScriptTask - Running task > runTF -- taskId=1; workdir=/home/kevin/SRAGPU-nf/work/08/2f5ec582448ffd1696afcad53ecb28; remote=false
+Sep-27 21:07:22.275 [pool-5-thread-1] DEBUG nextflow.executor.IgScriptTask - Completed task > runTF -- taskId=1; exitStatus=0
+Sep-27 21:07:22.280 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: runTF; status: COMPLETED; exit: 0; error: -; workDir: /home/kevin/SRAGPU-nf/work/08/2f5ec582448ffd1696afcad53ecb28]
+Sep-27 21:07:22.293 [Actor Thread 2] DEBUG nextflow.Session - <<< barrier arrive (process: runTF)
+Sep-27 21:07:22.293 [main] DEBUG nextflow.Session - Session await > all process finished
+Sep-27 21:07:27.279 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: ignite)
+Sep-27 21:07:27.279 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-27 21:07:27.288 [main] DEBUG nextflow.executor.IgConnector - Shutting down grid nodes
+Sep-27 21:07:27.288 [main] DEBUG nextflow.scheduler.SchedulerAgent - === Scheduler agent shutting down
+Sep-27 21:07:27.293 [main] INFO  o.a.i.i.p.r.p.t.GridTcpRestProtocol - Command protocol successfully stopped: TCP binary
+Sep-27 21:07:27.311 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: nextflow.cache.pendingtasks
+Sep-27 21:07:27.311 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: allSessions
+Sep-27 21:07:27.311 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: ignite-marshaller-sys-cache
+Sep-27 21:07:27.311 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: ignite-sys-cache
+Sep-27 21:07:27.312 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: ignite-atomics-sys-cache
+Sep-27 21:07:27.312 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: igfs-data
+Sep-27 21:07:27.312 [main] INFO  o.a.i.i.p.cache.GridCacheProcessor - Stopped cache: igfs-meta
+Sep-27 21:07:27.353 [main] INFO  o.a.i.internal.IgniteKernal%nextflow - 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 1.6.0#20160518-sha1:0b22c45bb9b97692208fd0705ddf8045ff34a031 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Grid name: nextflow
+>>> Grid uptime: 00:03:17:309
+
+
+Sep-27 21:07:27.410 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Sep-27 21:07:27.426 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

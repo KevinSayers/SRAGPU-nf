@@ -1,0 +1,2 @@
+2017-09-27 21:04:03	3m 24s	cocky_spence	OK	dbb0011f60f4a43e39d4b20880c4a58b	3302c465-ad72-4d98-8553-11d4b4219c12	nextflow run classify.nf
+2017-09-27 21:09:46	1m 6s	ridiculous_bell	ERR	960ddae40419fa99352c585a2bfde4cf	b5fe5a52-e563-4cae-83b8-62c67f5ad2a3	nextflow run main.nf
